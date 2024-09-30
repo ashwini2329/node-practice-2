@@ -6,6 +6,8 @@ const db = require("./dbConfig");
 
 const investmentRoutes = require("./routes/investment");
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
     res.status(200).send("<h1>Hello from Node.Js App 2</h1>");
 });
